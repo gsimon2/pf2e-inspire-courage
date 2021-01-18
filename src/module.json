@@ -1,9 +1,9 @@
 {
   "name": "pf2e-inspire-courage",
-  "title": "PF2e Inspire Courage",
+  "title": "PF2e Inspire Courage Button",
   "description": "Adds a button to character token HUDs that allows for the toggling of Inspire Courage",
   "systems": ["pf2e"],
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "GS",
   "esmodules": [
     "pf2e-inspire-courage.js"
@@ -20,10 +20,10 @@
   ],
   "minimumCoreVersion": "0.7.0",
   "compatibleCoreVersion": "0.7.9",
-  "url": "https://github.com/gsimon2/dramatic-rolls",
-  "bugs": "https://github.com/gsimon2/dramatic-rolls/issues",
-	"changelog": "https://github.com/gsimon2/dramatic-rolls/releases",
-	"download": "https://github.com/gsimon2/dramatic-rolls/releases/download/1.0.1/module.zip",
-	"manifest": "https://github.com/gsimon2/dramatic-rolls/releases/download/1.0.1/module.json",
-	"readme": "https://raw.githubusercontent.com/gsimon2/dramatic-rolls/main/README.md"
+  "url": "https://github.com/gsimon2/pf2e-inspire-courage",
+  "bugs": "https://github.com/gsimon2/pf2e-inspire-courage/issues",
+	"changelog": "https://github.com/gsimon2/pf2e-inspire-courage/releases",
+	"download": "https://github.com/gsimon2/pf2e-inspire-courage/releases/download/1.0.0/module.zip",
+	"manifest": "https://github.com/gsimon2/pf2e-inspire-courage/releases/latest/download/module.json",
+	"readme": "https://raw.githubusercontent.com/gsimon2/pf2e-inspire-courage/main/README.md"
 }
