@@ -30,10 +30,10 @@ const createButton = (actor: CustomActor) => {
     return button;
 };
 
-export const prepTokenHUD = (hud: TokenHUD, html: JQuery, token) => {
+export const prepTokenHUD = (hud: TokenHUD, html: JQuery, token: Token) => {
     const actor: CustomActor = game.actors.get(token.actorId);
 
-    if (true) { //Add game settings here
+    if (game.settings.get('pf2e-inspire-courage', 'add-inspire-courage-button')) {
         const artButton = createButton(actor);
 
         $(artButton)
