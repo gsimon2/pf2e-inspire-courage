@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "pf2e-inspire-courage",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "package": "gulp package",
