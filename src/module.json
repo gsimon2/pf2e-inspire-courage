@@ -4,7 +4,13 @@
   "description": "Adds a button to character token HUDs that allows for the toggling of Inspire Courage",
   "systems": ["pf2e"],
   "version": "1.0.0",
-  "author": "GS",
+  "authors": [
+    {
+      "name": "Glen Simon",
+      "email": "glen.a.simon@gmail.com",
+      "url": "https://github.com/gsimon2"
+    }
+  ],
   "esmodules": [
     "pf2e-inspire-courage.js"
   ],
