@@ -4,14 +4,14 @@ const tokenButtonHandler = async (event, actor: Actor, token) => {
     const activeToken = actor.getActiveTokens().find(t => t.data._id === token._id);
     const inspireCourageEffects = getInspireCourageEffects(actor);
 
-    activeToken.toggleEffect('systems/pf2e/icons/spells/inspire-courage.jpg');
-
     if (inspireCourageEffects.length) {
         btn.removeClass('active');
         actor.deleteEmbeddedEntity('OwnedItem', inspireCourageEffects.map(i => i._id));
     } else {
         btn.addClass('active');
-        actor.createOwnedItem(inspireCourageItem);
+        let effect = await actor.createOwnedItem(inspireCourageItem);
+        let update = {_id: effect._id, data: { expired: false, duration: {unit: 'unlimited'}}};
+        actor.updateEmbeddedEntity('OwnedItem', update);
     }
 };
 
