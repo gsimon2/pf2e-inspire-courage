@@ -11,7 +11,9 @@ const tokenButtonHandler = async (event, actor: Actor, token) => {
         actor.deleteEmbeddedEntity('OwnedItem', inspireCourageEffects.map(i => i._id));
     } else {
         btn.addClass('active');
-        actor.createOwnedItem(inspireCourageItem);
+        const effect = await actor.createOwnedItem(inspireCourageItem);
+        const update = {_id: effect._id, data: { expired: false, duration: {unit: 'unlimited'}}};
+        actor.updateEmbeddedEntity('OwnedItem', update);
     }
 };
 
