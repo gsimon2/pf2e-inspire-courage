@@ -1,4 +1,4 @@
-const tokenButtonHandler = async (event, actor: Actor, token) => {
+const tokenButtonHandler = async (event, actor, token) => {
     const btn = $(event.currentTarget);
     const inspireCourageItem = await getInspireCourageItem();
     const activeToken = actor.getActiveTokens().find(t => t.data._id === token._id);
@@ -17,7 +17,7 @@ const tokenButtonHandler = async (event, actor: Actor, token) => {
     }
 };
 
-const createButton = (actor: Actor) => {
+const createButton = (actor) => {
     let btn = document.createElement('div');
 
     btn.classList.add('control-icon');
@@ -28,9 +28,9 @@ const createButton = (actor: Actor) => {
     return btn;
 };
 
-export const prepTokenHUD = (hud: TokenHUD, html: JQuery, token: Token) => {
-    const actor: Actor = game.actors.get(token.actorId);
-    const isCharacterToken: boolean = actor.data.type.toLowerCase() === 'character';
+export const prepTokenHUD = (hud, html, token) => {
+    const actor = game.actors.get(token.actorId);
+    const isCharacterToken = actor.data.type.toLowerCase() === 'character';
 
     if (game.settings.get('pf2e-inspire-courage', 'add-inspire-courage-button') && isCharacterToken) {
         const artButton = createButton(actor);
@@ -47,13 +47,13 @@ export const prepTokenHUD = (hud: TokenHUD, html: JQuery, token: Token) => {
     }
 };
 
-const getInspireCourageItem = async (): Promise<Item> => {
-    const spellEffectPack: Compendium = game.packs.get('pf2e.spell-effects');
+const getInspireCourageItem = async () => {
+    const spellEffectPack = game.packs.get('pf2e.spell-effects');
     await spellEffectPack.getIndex(); // Have to force the compendium to load content
-    const InspireCourageEntry: any = spellEffectPack.index.find((e: any) => e.name.includes('Inspire Courage'));
-    return await spellEffectPack.getEntity(InspireCourageEntry._id) as Item;
+    const InspireCourageEntry = spellEffectPack.index.find(e => e.name.includes('Inspire Courage'));
+    return await spellEffectPack.getEntity(InspireCourageEntry._id);
 };
 
-const getInspireCourageEffects = (actor: Actor) => {
-    return (actor.data as any).items.filter(i => i.name.toLowerCase().includes('inspire courage') && i.type === 'effect');
+const getInspireCourageEffects = (actor) => {
+    return (actor.data).items.filter(i => i.name.toLowerCase().includes('inspire courage') && i.type === 'effect');
 };

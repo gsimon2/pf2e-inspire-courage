@@ -11,12 +11,7 @@
       "url": "https://github.com/gsimon2"
     }
   ],
-  "esmodules": [
-    "pf2e-inspire-courage.js"
-  ],
-  "styles": [
-    "pf2e-inspire-courage.css"
-  ],
+  "esmodules": ["scripts/pf2e-inspire-courage.js"],
   "languages": [
     {
 			"lang": "en",
