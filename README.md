@@ -8,6 +8,3 @@ A simple module for [FoundryVtt](https://foundryvtt.com/) that adds a button to 
 When inspire courage is active, the inspire courage effect icon will appear on the token and the spell effect will be added to the actor's sheet. The bonus to attack and damage rolls will automatically apply.
 
 ![Inspire Courage Demo](./demo.gif)
-
-
-*Bootstrapped with: [Foundry Project Creator CLI](https://gitlab.com/foundry-projects/foundry-pc/create-foundry-project) - Which is simply awesome, many thanks!

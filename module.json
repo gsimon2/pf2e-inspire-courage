@@ -3,7 +3,7 @@
   "title": "PF2e Inspire Courage Button",
   "description": "Adds a button to character token HUDs that allows for the toggling of Inspire Courage",
   "systems": ["pf2e"],
-  "version": "1.0.1",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "Glen Simon",
@@ -11,12 +11,7 @@
       "url": "https://github.com/gsimon2"
     }
   ],
-  "esmodules": [
-    "pf2e-inspire-courage.js"
-  ],
-  "styles": [
-    "pf2e-inspire-courage.css"
-  ],
+  "esmodules": ["scripts/pf2e-inspire-courage.js"],
   "languages": [
     {
 			"lang": "en",
@@ -24,12 +19,12 @@
 			"path": "lang/en.json"
 		}
   ],
-  "minimumCoreVersion": "0.7.0",
-  "compatibleCoreVersion": "0.7.9",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "0.8.6",
   "url": "https://github.com/gsimon2/pf2e-inspire-courage",
   "bugs": "https://github.com/gsimon2/pf2e-inspire-courage/issues",
 	"changelog": "https://github.com/gsimon2/pf2e-inspire-courage/releases",
-	"download": "https://github.com/gsimon2/pf2e-inspire-courage/releases/download/1.0.1/module.zip",
-	"manifest": "https://github.com/gsimon2/pf2e-inspire-courage/releases/latest/download/module.json",
+	"download": "https://github.com/gsimon2/pf2e-inspire-courage/releases/download/1.1.0/module.zip",
+	"manifest": "https://github.com/gsimon2/pf2e-inspire-courage/releases/download/1.1.0/module.json",
 	"readme": "https://raw.githubusercontent.com/gsimon2/pf2e-inspire-courage/main/README.md"
 }
