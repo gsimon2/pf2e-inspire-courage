@@ -3,7 +3,7 @@
    "title": "PF2e Inspire Courage Button",
    "description": "Adds a button to character token HUDs that allows for the toggling of Inspire Courage",
    "systems": ["pf2e"],
-   "version": "1.1.1",
+   "version": "1.1.2",
    "authors": [
       {
          "name": "Glen Simon",
@@ -19,12 +19,12 @@
          "path": "lang/en.json"
       }
    ],
-   "url": "https://github.com/gsimon2/pf2e-inspire-courage",
-   "bugs": "https://github.com/gsimon2/pf2e-inspire-courage/issues",
-   "changelog": "https://github.com/gsimon2/pf2e-inspire-courage/releases",
-   "download": "https://github.com/gsimon2/pf2e-inspire-courage/releases/download/1.1.1/module.zip",
-   "manifest": "https://github.com/gsimon2/pf2e-inspire-courage/releases/download/1.1.1/module.json",
-   "readme": "https://raw.githubusercontent.com/gsimon2/pf2e-inspire-courage/main/README.md",
+   "url": "https://github.com/Vabres/pf2e-inspire-courage-temp-fork",
+   "bugs": "https://github.com/Vabres/pf2e-inspire-courage-temp-fork/issues",
+   "changelog": "https://github.com/Vabres/pf2e-inspire-courage-temp-fork/releases",
+   "download": "https://github.com/Vabres/pf2e-inspire-courage-temp-fork/releases/download/1.1.2/module.zip",
+   "manifest": "https://github.com/Vabres/pf2e-inspire-courage-temp-fork/releases/download/1.1.2/module.json",
+   "readme": "https://raw.githubusercontent.com/Vabres/pf2e-inspire-courage-temp-fork/main/README.md",
    "id": "pf2e-inspire-courage",
    "compatibility": {
       "minimum": "10",
