@@ -60,7 +60,7 @@ const getInspireCourageEffect = async () => {
    const spellEffectPack = game.packs.get("pf2e.spell-effects");
    await spellEffectPack.getIndex(); // Have to force the compendium to load content
    const InspireCourageEntry = spellEffectPack.index.find((e) =>
-      e.name.includes("Inspire Courage")
+      e.name.includes("Courageous Anthem")
    );
    return await spellEffectPack.getDocument(InspireCourageEntry._id);
 };
@@ -68,6 +68,6 @@ const getInspireCourageEffect = async () => {
 const getInspireCourageEffectsFromActor = (actor) => {
    return actor.data.items.filter(
       (i) =>
-         i.name.toLowerCase().includes("inspire courage") && i.type === "effect"
+         i.name.toLowerCase().includes("Courageous Anthem") && i.type === "effect"
    );
 };
