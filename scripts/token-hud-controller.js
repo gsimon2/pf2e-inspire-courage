@@ -52,7 +52,7 @@ export const prepTokenHUD = (hud, html, token) => {
          .click((event) => tokenButtonHandler(event, actor, token))
          .contextmenu((event) => tokenButtonHandler(event, actor, token));
 
-      html.find("div.right").append(artButton);
+      $(html).find("div.right").append(artButton);
    }
 };
 
